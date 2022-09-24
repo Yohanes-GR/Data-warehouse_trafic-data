@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: richards
+    description: A Mysql Database temporal values
+    schema: Sensor_DW
+    tables:
+      - name: dimRichardStation
+        description: Richard Station table to store all information about flows and occupancy that occurs in the station
+        columns:
+          - name: id
+            description: unique event id
+            tests:
+              - unique
+              - not_null
+          - name: timestamp_id
+            description: Date time value at which event occured
+            tests:
+              - not_null
+          - name: total_flow
+            description: Total flow of event
+          - name: weekday
+            description: weekday value of event
+            tests:
+              - not_null
+          - name: hour
+            description: Hourly value of event
+            tests:
+              - not_null
