@@ -45,5 +45,4 @@ mysql_dbt:
       user: [prod_user]
       dbname: [dbname]
       schema: [prod_schema]
-
   target: dev
