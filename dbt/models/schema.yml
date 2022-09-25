@@ -1,0 +1,337 @@
+version: 2
+
+models:
+  - name: traffic_model
+    description: Select and model the data from the raw data.
+    columns: 
+      - name: track_id
+        description: The id of the truck
+        tests:
+          - not_null
+
+      - name: type
+        description: The type of the truck
+        tests:
+          - not_null
+
+      - name: traveled_d
+        description: The distance traveled in meters
+        tests:
+          - not_null
+
+      - name: avg_speed
+        description: The average speed of vehicle in km/h
+        tests:
+          - not_null
+
+      - name: lat
+        description: Latitude of the vehicle
+        tests:
+          - not_null
+
+      - name: lon
+        description: Longitude of the vehicle
+        tests:  
+          - not_null
+
+      - name: speed,
+        description: Speed of the vehicle in km/h
+        tests: 
+          # - not_null
+
+      - name: lon_acc
+        description: Latitude acceleration of the vehicle in m/sec2
+        tests: 
+          - not_null
+
+      - name: lat_acc
+        description: Longitude acceleration of the vehicle in m/sec2
+        tests: 
+          - not_null
+
+      - name: time
+        description: Time in seconds 
+        tests: 
+          - not_null 
+  
+  - name: car
+    description: Select Cars data from the data
+    columns: 
+      - name: time
+        description: Time in seconds 
+        tests: 
+          - not_null 
+
+      - name: traveled_d
+        description: The distance traveled in meters
+        tests:
+          - not_null
+
+      - name: avg_speed
+        description: The average speed of vehicle in km/h
+        tests:
+          - not_null
+
+      - name: lat
+        description: Latitude of the vehicle
+        tests:
+          - not_null
+
+      - name: lon
+        description: Longitude of the vehicle
+        tests:  
+          - not_null
+
+      - name: speed,
+        description: Speed of the vehicle in km/h
+        tests: 
+          # - not_null
+
+      - name: lon_acc
+        description: Latitude acceleration of the vehicle in m/sec2
+        tests: 
+          - not_null
+
+      - name: lat_acc
+        description: Longitude acceleration of the vehicle in m/sec2
+        tests: 
+          - not_null
+  
+  - name: bus
+    description: Select bus data from the data
+    columns: 
+      - name: time
+        description: Time in seconds 
+        tests: 
+          - not_null 
+
+      - name: traveled_d
+        description: The distance traveled in meters
+        tests:
+          - not_null
+
+      - name: avg_speed
+        description: The average speed of vehicle in km/h
+        tests:
+          - not_null
+
+      - name: lat
+        description: Latitude of the vehicle
+        tests:
+          - not_null
+
+      - name: lon
+        description: Longitude of the vehicle
+        tests:  
+          - not_null
+
+      - name: speed,
+        description: Speed of the vehicle in km/h
+        tests: 
+          # - not_null
+
+      - name: lon_acc
+        description: Latitude acceleration of the vehicle in m/sec2
+        tests: 
+          - not_null
+
+      - name: lat_acc
+        description: Longitude acceleration of the vehicle in m/sec2
+        tests: 
+          - not_null
+
+  - name: taxi
+    description: Select Taxi data from the data
+    columns: 
+      - name: time
+        description: Time in seconds 
+        tests: 
+          - not_null 
+
+      - name: traveled_d
+        description: The distance traveled in meters
+        tests:
+          - not_null
+
+      - name: avg_speed
+        description: The average speed of vehicle in km/h
+        tests:
+          - not_null
+
+      - name: lat
+        description: Latitude of the vehicle
+        tests:
+          - not_null
+
+      - name: lon
+        description: Longitude of the vehicle
+        tests:  
+          - not_null
+
+      - name: speed,
+        description: Speed of the vehicle in km/h
+        tests: 
+          # - not_null
+
+      - name: lon_acc
+        description: Latitude acceleration of the vehicle in m/sec2
+        tests: 
+          - not_null
+
+      - name: lat_acc
+        description: Longitude acceleration of the vehicle in m/sec2
+        tests: 
+          - not_null
+
+  - name: motorcycle
+    description: Select Motorcycle data from the data
+    columns: 
+      - name: time
+        description: Time in seconds 
+        tests: 
+          - not_null 
+
+      - name: traveled_d
+        description: The distance traveled in meters
+        tests:
+          - not_null
+
+      - name: avg_speed
+        description: The average speed of vehicle in km/h
+        tests:
+          - not_null
+
+      - name: lat
+        description: Latitude of the vehicle
+        tests:
+          - not_null
+
+      - name: lon
+        description: Longitude of the vehicle
+        tests:  
+          - not_null
+
+      - name: speed,
+        description: Speed of the vehicle in km/h
+        tests: 
+          # - not_null
+
+      - name: lon_acc
+        description: Latitude acceleration of the vehicle in m/sec2
+        tests: 
+          - not_null
+
+      - name: lat_acc
+        description: Longitude acceleration of the vehicle in m/sec2
+        tests: 
+          - not_null
+
+  - name: medium_vehicle
+    description: Select Medium Vehicle data from the data
+    columns: 
+      - name: time
+        description: Time in seconds 
+        tests: 
+          - not_null 
+
+      - name: traveled_d
+        description: The distance traveled in meters
+        tests:
+          - not_null
+
+      - name: avg_speed
+        description: The average speed of vehicle in km/h
+        tests:
+          - not_null
+
+      - name: lat
+        description: Latitude of the vehicle
+        tests:
+          - not_null
+
+      - name: lon
+        description: Longitude of the vehicle
+        tests:  
+          - not_null
+
+      - name: speed,
+        description: Speed of the vehicle in km/h
+        tests: 
+          # - not_null
+
+      - name: lon_acc
+        description: Latitude acceleration of the vehicle in m/sec2
+        tests: 
+          - not_null
+
+      - name: lat_acc
+        description: Longitude acceleration of the vehicle in m/sec2
+        tests: 
+          - not_null
+
+  - name: heavy_vehicle
+    description: Select Heavy Vehicle data from the data
+    columns: 
+      - name: time
+        description: Time in seconds 
+        tests: 
+          - not_null 
+
+      - name: traveled_d
+        description: The distance traveled in meters
+        tests:
+          - not_null
+
+      - name: avg_speed
+        description: The average speed of vehicle in km/h
+        tests:
+          - not_null
+
+      - name: lat
+        description: Latitude of the vehicle
+        tests:
+          - not_null
+
+      - name: lon
+        description: Longitude of the vehicle
+        tests:  
+          - not_null
+
+      - name: speed,
+        description: Speed of the vehicle in km/h
+        tests: 
+          # - not_null
+
+      - name: lon_acc
+        description: Latitude acceleration of the vehicle in m/sec2
+        tests: 
+          - not_null
+
+      - name: lat_acc
+        description: Longitude acceleration of the vehicle in m/sec2
+        tests: 
+          - not_null
+
+  - name: truck_info
+    description: Extract the Average speed of each vehicle from the given dataset.
+    columns: 
+      - name: truck_type
+        description: The type of vehicle 
+        tests: 
+            - unique
+            - not_null 
+
+      - name: total_avg_speed
+        description: The average speed of each vehicle in km/h.
+        tests: 
+          - not_null 
+
+      - name: total_distance_traveled_km
+        description: The total distance each vehicle traveled in km/h.
+        tests: 
+          - not_null 
+
+      - name: total_count
+        description: The total number of truck type in the dataset.
+        tests: 
+          - not_null 
